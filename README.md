@@ -10,10 +10,10 @@ You can find here the live demo: https://fa-abdullah.github.io/Kanban-Board/
 - Don't use any Libraries, Only HTML, CSS, JavaScript are allowed.
 
 🎯 Requirements:
-1- Have the ability to create new tasks
-2- Add buttons to edit and delete the items.
-4- Add the ability to drag and drop items between columns and positions.
-5- Save all the data to local storage.
+-  Have the ability to create new tasks
+-  Add buttons to edit and delete the items.
+-  Add the ability to drag and drop items between columns and positions.
+-  Save all the data to local storage.
 
 
 📜 التعليمات:
@@ -23,7 +23,7 @@ You can find here the live demo: https://fa-abdullah.github.io/Kanban-Board/
 - عدم استخدام أي مكتبة خارجية في المشروع، فقط HTML, CSS, JavaScript.
 
 🎯 المطلوب:
-1- تشغيل خاصية إنشاء مهمة جديدة.
-2- إضافة زر لتعديل وزر لحذف المهمة وتشغيلهما.
-4- خاصية Drag and Drop لإعادة ترتيب المهام أو نقلها من عمود لعمود آخر.
-5- استخدام الlocalStorage في حفظ المهام في حال إغلاق الموقع.
+- تشغيل خاصية إنشاء مهمة جديدة.
+- إضافة زر لتعديل وزر لحذف المهمة وتشغيلهما.
+- خاصية Drag and Drop لإعادة ترتيب المهام أو نقلها من عمود لعمود آخر.
+- استخدام الlocalStorage في حفظ المهام في حال إغلاق الموقع.
