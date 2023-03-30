@@ -55,6 +55,7 @@ html,body{
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
+	margin-top: 10px;
 }
 
 footer{
@@ -68,4 +69,14 @@ footer{
 footer p{
 	padding: 5px;
     margin: 0;
+}
+
+.dbtn{
+	background-color: #fff;
+	text-align: right;
+	border:none;
+	cursor: pointer;
+	display:flex;
+	margin-top: -80px;
+	margin-left: 397px;
 }
