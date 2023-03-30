@@ -1,0 +1,71 @@
+html,body{
+	margin: 0;
+    padding: 0;
+	background: #009578;
+	font-family:'Permanent Marker',cursive;
+}
+.Title{
+	color:#fff;
+}
+.kanban {
+	display: flex;
+	padding: 30px;
+	background: #009578;
+}
+
+.kanban__column {
+	flex: 1;
+}
+
+.kanban__column:not(:last-child) {
+	margin-right: 30px;
+}
+
+.kanban__column-title {
+	margin-bottom: 20px;
+	font-size: 30px;
+	color: white;
+	user-select: none;
+}
+
+.Item-input {
+	padding: 10px 15px;
+	box-sizing: border-box;
+	background: white;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.kanban__DragDropArea {
+	height: 10px;
+	transition: background 0.15s, height 0.15s;
+}
+
+.kanban__DragDropArea--active {
+	height: 20px;
+	background: rgba(0, 0, 0, 0.25);
+}
+
+.kanban__add-item {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: white;
+	background: rgba(0, 0, 0, 0.1);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+footer{
+	color:#fff;
+	background-color: #00866c;
+	bottom: 0px;
+	position: absolute;
+	margin-bottom: 0px;
+	width: -webkit-fill-available;
+}
+footer p{
+	padding: 5px;
+    margin: 0;
+}
