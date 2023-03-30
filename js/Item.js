@@ -12,32 +12,31 @@ export default class Item {
 		this.elements.root.dataset.id = id;
 		this.elements.input.textContent = content;
 		this.content = content;
+		let btnDeleteItem =document.createElement("button");
+		this.elements.root.appendChild(btnDeleteItem)
+		this.elements.root.appendChild(btnDeleteItem)
 		this.elements.root.appendChild(bottomDragDropArea);
 
 		const onBlur = () => {
 			const newContent = this.elements.input.textContent.trim();
-
 			if (newContent == this.content) {
 				return;
 			}
-
 			this.content = newContent;
-
 			KanbanAPI.updateItem(id, {
 				content: this.content
 			});
 		};
 
 		this.elements.input.addEventListener("blur", onBlur);
-		this.elements.root.addEventListener("dblclick", () => {
-			const check = confirm("Are you sure you want to delete this item?");
 
-			if (check) {
-				KanbanAPI.deleteItem(id);
-
-				this.elements.input.removeEventListener("blur", onBlur);
-				this.elements.root.parentElement.removeChild(this.elements.root);
-			}
+		btnDeleteItem.innerHTML="🗑️";
+		btnDeleteItem.className="dbtn";
+		
+		btnDeleteItem.addEventListener("click",() =>{
+			KanbanAPI.deleteItem(id);
+			this.elements.input.removeEventListener("blur", onBlur);
+			this.elements.root.parentElement.removeChild(this.elements.root);
 		});
 
 		this.elements.root.addEventListener("dragstart", e => {
@@ -55,8 +54,8 @@ export default class Item {
 		range.selectNode(document.body);
 
 		return range.createContextualFragment(`
-			<div class="Item" draggable="true">
-				<div class="Item-input" contenteditable></div>
+			<div class="Item" draggable="true" style=" justify-content: space-between;">
+				<div class="Item-input" contenteditable style="display:inline-block; min-width:445px; margin-bottom: 50px;margin-top:15px"></div>
 			</div>
 		`).children[0];
 	}
